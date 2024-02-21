@@ -1,0 +1,16 @@
+OAuth Misconfiguration Account Takeover
+
+1- https://www.abc.com/ is the application.
+2- if the application supports OAuth functionality service providers like Facebook and Google which you can link your social accounts to the application https://www.abc.com
+3-Intercept the application using Burpsuite and Now click on Facebook icon for linking of social account to the account in https://www.abc.com/
+4-Observer the request and lookout for whether state parameter is implemented or not
+5-If state parameter is not there which means it is vulnerable to CSRF attack
+6-Once you successfully authenticated then intercept the callback request from Facebook looks like below
+GET /auth/facebook/callback?code=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX HTTP/1.1
+Host: abc.com
+7-Generate a CSRF poc on this page and save it as poc.html
+8-Now create another account. which is victim account on https://www.abc.com/ go to the setting page where you can link the social account.
+9-Now open poc.html page in the browser and click on submit button
+10-Facebook account is successfully linked with victim account on https://www.abc.com
+11-Logout from the application and try to login from your social account
+12-Successfully logged into the victim account of https://www.abc.com/

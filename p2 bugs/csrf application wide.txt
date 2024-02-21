@@ -1,0 +1,31 @@
+Steps to Reproduce:
+
+Case 1-
+
+1-Go to https://www.mybag.com/& do login your account.
+2-Go to any product & Click to add to cart option & intercept that request in burp.
+3-Now make CSRF POC of that request & open it in victim's browser.
+4-Product will be added in victim's cart.
+
+Impact:
+Attacker could add any product in victim's card.
+
+Case 2-
+
+Create CSRF POC on DELETE Account(if website is vulnerable for delete account without password)
+
+Case 3-
+
+Create CSRF POC on Change password (if website is vulnerable for lack of password confirmation on password field & Lack of password confirmation on email change)
+
+Case 4- disable 2 fa through csrf
+
+
+1-Go to https://abc.com/profile/settings and sign up for two accounts. 
+2-Log in to attacker account and capture the Disable 2FA request in Burp suite and generate CSRF poc.
+3-Save the CSRF poc file with extension .HTML.
+4-Now log in into Victim’s account in Private Browser and fire that CSRF file. Now you can see that It disable 2FA which leads to 2FA Bypass.
+
+Case 5-
+
+Check deleting profile picture and nd other important points in websites.

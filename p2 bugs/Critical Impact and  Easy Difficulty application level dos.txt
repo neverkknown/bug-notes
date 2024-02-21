@@ -1,0 +1,32 @@
+Vulnerability Description: Application level Denial of service is often confused with network level DoS. This vulnerability occurs because faulty implementation of some functions on the application. The entry point for this vulnerability involves interaction with application and these kind of attacks are often tough to identify and sometimes even tougher to prevent.
+
+
+
+Steps-
+
+1- I have created a account through victim email. (abc@gmail.com)
+2-account login without email confirmation.
+3-attacker enable 2FA security .
+4-vicitim reset a password but real user can reset a password but can't login a account.
+5-real person reset a password but not login a account because 2FA is enable.
+
+Case 2-
+
+How to Test:
+
+1- Look out for file uploads in an application and try to upload the file which is larger in size multiple times.
+2- Try to perform ZIP bomb attack where you find application is allowing you to upload compressed files and extract the content for you
+3- Whenever you see image upload where you can upload PNG files , can compress PNG file of 50MB file to 49KB. Once it is uploaded and converted to image thus where high chances of Application Denial of service can be possible.
+4- Billion Laugh attack is one example for Application Level DoS . You can check this whenever you come across any application accepts input in XML format and parses it on the server side.
+
+Impact: Application Layer Denial of service will have the same effect as network level DoS . It can take down the application server or make application unavailable to use for other users.
+
+Recommendation:
+
+· Proper Input validation can help to mitigate this vulnerability
+· File Integrity checks on the server side can prevent this vulnerability
+
+Case 3 - Long password attck on password field
+
+Case 4- Billion Laugh attack
+

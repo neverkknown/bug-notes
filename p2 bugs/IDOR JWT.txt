@@ -1,0 +1,16 @@
+1-I have login two accounts
+
+2-Go to first account and intercept a light theme .
+
+3-I have noticed ndax have user jwt token
+
+4-I have copied authorization bearer value
+
+5-go to https://jwt.io or jsonwebtoken.io website
+
+6-chnage user id and username of token and paste again on authorization value
+
+7-intercept off and i have updated second user theme successfully.
+
+
+I have changed minor and also i have updated OCCUPATION to through this IDOR

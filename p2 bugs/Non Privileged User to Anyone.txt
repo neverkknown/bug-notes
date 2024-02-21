@@ -1,0 +1,19 @@
+POC- Non-Privileged User to Anyone
+
+1- go to https://example.com
+2- click on user
+3- add user
+4-put xss payload in first name field
+Payload- '"<svg/onload=prompt(document.cookie);>
+5-click on add
+6- when i have search user first name in search field
+7-XSS fired.
+
+Steps-Website have featured invite user options
+
+1- go to https://abc.com
+2-add company name with xss payload "asdfasdf<script>alert(12)</script>"
+3-my xss payload have executed
+
+I have attached video poc and screenshot.
+

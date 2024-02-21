@@ -1,0 +1,16 @@
+Description:
+
+There can be many variables in the application such as “id”, “pid”, “uid”. Although these values are often seen as HTTP parameters, they can be found in headers and cookies. The attacker can access, edit or delete any of other users’ objects by changing the values. This vulnerability is called IDOR.
+
+steps:
+
+1-Make two accounts on two different browsers & invite different users from both the account.
+2-Now in both accounts you have one invited user.
+3-take customer id of first account invited user.
+4-Now go to second browser & delete your invited user & take delete request in burp suite
+5-Change customer id to other user & forward.
+6- First users invited member will deleted.
+
+Impact:
+
+I have deleted a user of other account.

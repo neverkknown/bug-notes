@@ -1,0 +1,9 @@
+Privilege escalation is the act of exploiting a bug, design flaw or configuration oversight in an operating system or software application to gain elevated access to resources that are normally protected from an application or user
+
+Reproduce Steps-
+
+1- I have login a account and intercept a request and check response
+2-copy a jwt token from response code
+3-go to https://www.jsonwebtoken.io and change something (ROLE_USER to Role_ADMIN) in jwt token
+4-again paste in reposne
+5- i have access admin dashboard option.

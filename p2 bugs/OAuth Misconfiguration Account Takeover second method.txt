@@ -1,0 +1,8 @@
+Reproduce Steps-
+
+1- Create a account at abc.com using Google Auth
+2-Change Email address to victim email address.(vicitm have not received verify email)
+3-Victim create a account on abc.com using email address.but not signup email have already used.
+4-Victim Reset a password and use account.
+5-Attacker can also access a victim account through Google O-AUTH.if vicitm can't click on unlink Google-OAUTH feature
+
