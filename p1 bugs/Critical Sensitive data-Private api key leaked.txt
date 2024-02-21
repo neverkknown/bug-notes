@@ -1,0 +1,15 @@
+Steps
+
+1.Download Android app
+2.Decompile using apktool
+3.Go to res/values/
+4.Read the strings.xml file
+5.You can see hardcoded sensitive' api keys & passwords also.
+
+<string name="amplitudeApiKey">b59e237b6e704fbb4b4d3cd24d1c38ce</string>
+
+<string name="appsflyerApiKey">88VyFPQbzEB2Dkk4c36Xne</string>
+<string name="directions_api_key">AIzaSyBWRQTe9yCeQ0VQgNFxK2TrsKU5zVc0Y9s</string>
+<string name="googleApiProjectId">621901099599</string>
+
+<string name="solvvyApiKey">edebd1bc-9ce3-4df2-9e77-06e6cd58ac2a~l9qDX1z4rqInxgD9TsOjs8p5nRGbP0gwJ9vP24tsmh4Hi662yzdj7q1iIJBEoMKi</string>

