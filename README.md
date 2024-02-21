@@ -1,1 +1,1 @@
-# sigma-test-rule
+# playbook-bugs
