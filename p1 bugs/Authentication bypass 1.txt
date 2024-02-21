@@ -3,7 +3,7 @@ POC: Authetication bypass
 
 1.Register two accounts with two mobile number (first enter right otp)
 2.Intercept your request and check response
-3- I have see successfully OTP Message Code
+3- I have seen successfully OTP Message Code
 4-Now register from second mobile number
 5-Put wrong OTP and intercept a request
 6-again follow same step and change response (error to success)
