@@ -1,0 +1,13 @@
+Hi Team,
+
+The removal of account is one of the sensitive part of a web application that needs to protect, therefore removing an account should validate the authenticity of the user, however i have found that when removing an account, the system did not require the user to input the account password.
+
+Steps to reproduce:
+
+    go to https://abc.com and login to your account.
+    go to profile/settings.
+    you'll see the "close account" button.
+    press that button and you'll be successfully deleted your account.
+
+Mitigation:
+Put reauthentication when anyone/user is deleting an account, ask the user to input password before the completion of the account deletion.

@@ -1,0 +1,15 @@
+Steps:
+
+Reproduce Steps:
+
+1- open this link https://abc.com
+2-open form and fill details.
+3-intercept a request in Burpsuite
+4-request send to intruder
+5-use null payloads and start attack.
+6-I have checked 500 request and all email send to server.
+
+Solution:-
+
+You should limit the rate for contact form to avoid such kind of issues.
+

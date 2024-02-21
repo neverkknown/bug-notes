@@ -1,0 +1,9 @@
+No Secure Integrity Check
+
+Steps
+Go to a website or an application
+Click on download button
+If a file is downloaded on your system or application and it executable
+It may be a ransomware or a virus
+
+Impact - The system can be compromised as the file is not being scanned by the website itself ( has not integrity check)

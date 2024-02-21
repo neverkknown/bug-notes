@@ -1,0 +1,16 @@
+
+
+Description:
+            I found a No rate limit vulnerability on resent invitation mail to other users.
+
+Step:
+
+   1- Go to https://target.com & invite new user.
+   2- Now click on resend mail & intercept that request & send to intruder.
+   3- set null payload & start attack.
+   4- Victim will receive huge number of emails in his mail box.
+
+How to fix: Rate limiting should be implemented
+
+Impact
+Email Flooding

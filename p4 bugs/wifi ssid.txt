@@ -1,0 +1,12 @@
+WiFi SSID+Password Mobile
+
+Steps
+1-Install an application
+2-Connect that application with your local WIFI
+3-Go to android folder in your phone
+4-Go to data/misc/wifi folder
+5-If the wifi details are saved, the filename can be like - wpa_supplicant.conf
+6-Open the file using any word/notepad
+7-SSID and password will be visible in plaintext
+
+Impact - App is saving user's private data which is directly related to privacy concerns and unnecessary data collection 

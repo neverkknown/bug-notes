@@ -1,0 +1,11 @@
+Summary:
+
+Website is not fully protected by an SSL certificate. This could allow an attacker in a Man-in-the-Middle position to obtain usernames and passwords of users visiting the site.
+
+link- http://abc.com
+
+Impact:
+
+If a user were to visit this page from a public or shared network (eg,office, airport, library, etc) and login a account, a malicious user on the same network would be able to obtain that users username and password by conducting a Man-in-the-Middle attack using sslstrip and wireshark.
+
+This would allow the malicious user complete access to the user's account.

@@ -1,0 +1,14 @@
+Sensitive Application Data Stored Unencrypted -- On External Storage
+
+Steps:
+
+1-Install an application 
+2-Create an account
+3-Login using credentials ( Sensitive)
+4-Go to android folder
+5-Go to data/(com.application name)
+
+
+
+
+

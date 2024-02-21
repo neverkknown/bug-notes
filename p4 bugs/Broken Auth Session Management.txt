@@ -1,0 +1,9 @@
+Broken Authentication and Session Management - Failure to invalidate session on logout - On the password reset and/or change.
+
+Steps:
+
+Create an account and goto my profile.
+Change password in Browser 1
+Go to Browser 2 and edit the data and save.
+Data changed. 
+Checked by refreshing the webpage.

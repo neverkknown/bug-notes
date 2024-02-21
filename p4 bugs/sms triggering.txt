@@ -1,0 +1,11 @@
+Reproduce Steps:
+
+1- Open this link https://bugcrowd04.abc.com
+2-go to security and enter phone number
+3-Intercept a request and request sent to intruder
+4-use null payloads and start attack.
+5-All message sent to mobile number
+
+Solution:-
+
+You should limit the rate for queue-it-now page to avoid such kind of issues.

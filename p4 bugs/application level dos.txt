@@ -1,0 +1,11 @@
+Description :
+I able to add 2FA to my account without verifying my email
+
+Attack scenario :
+
+Attacker sign up with victim email (Email verification will be sent to victim email).
+Attacker able to login without verifying email.
+Attacker add 2FA.
+
+Impact
+the victim can't register an account with victim email. If the victim reset the password, the password will change, but the victim can't login because 2FA.

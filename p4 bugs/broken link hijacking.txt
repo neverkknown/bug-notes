@@ -1,0 +1,13 @@
+Broken link hijacking (BLH) is a type of web attack. It exploits external links that are no longer valid. If your website or web application uses resources loaded from external URLs or points to such resources and these resources are no longer there (for example due to an expired domain), attackers can exploit these links to perform defacement, impersonation, or even to launch cross-site scripting attacks.
+
+Steps-
+
+1-open this https://www.abc.com/ and chek social networking icon
+2-click on Twitter icon.
+3-twitter account is not linked
+4-attacker can create a account by company name cloudconformity.
+5-check this link https://twitter.com/abc
+
+Impact:
+
+An attacker can create an account on the social media platform with that username and impersonate the company.

@@ -1,0 +1,14 @@
+Server-Side Credentials Storage -- Plaintext
+
+Steps:
+Go to xyz.com and create an account
+Go to account settings
+Enable 2FA
+Logout from the account
+Re-login using credentials and it will redirect to 2FA page
+Press right click and click on view page source
+Search email/password 
+
+Credentials will be visible in plaintext
+
+Imapct - The credentials of the user is being stored on source code in plaintext

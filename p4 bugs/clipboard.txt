@@ -1,0 +1,14 @@
+Clipboard Enabled - The data that contains sensitive information that can be copied to the clipboard
+
+Steps:
+Install an application
+Start the application.
+Enter text into input fields that ask for sensitive data. 
+Try copying this data into a note application. 
+If strings can be copied and pasted, the clipboard is enabled.
+For Android, the Drozer module post.capture.clipboard can be used to extract data from the clipboard:dz> run post.capture.clipboard
+
+IMPACT
+
+In enabled clipboard increases the risk of the exposure of sensitive information. 
+If data such as credit card numbers, social security numbers, or other sensitive information is cut and paste from or into the application, it may be saved to the phone and accessed at a later date.

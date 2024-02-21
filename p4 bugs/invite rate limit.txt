@@ -1,0 +1,12 @@
+
+
+Description:
+While I was testing your web application https://target.com, I found a no rate limit vulnerability on invite user.
+
+Go to https://target.com/projects/
+Send invite & take that request in burp.
+Send to intruder & start attack as null payload.
+victim will get huge nunber of emails.
+
+Impact:
+Victim will receive huge number of emails in his mail box.

@@ -1,0 +1,11 @@
+Steps-
+
+1-open https://www.delta.exchange/app/forgot_password
+2-enter email and received reset link
+3-I have changed my password 2 times from one reset link
+4-Reset link not expire.
+
+
+MITIGATION:
+
+All password reset tokens should automatically expire after the issuance of new ones.

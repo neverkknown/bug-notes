@@ -1,0 +1,13 @@
+
+
+Description:
+No rate limit on password reset leads to email-triggering
+
+Steps:
+
+    Go to https://target.com
+    Enter email & click reset password, take request on intruder.
+    Set null payload 100 & start attack.
+
+Impact:
+Victim will get huge number of emails.

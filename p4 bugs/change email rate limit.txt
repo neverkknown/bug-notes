@@ -1,0 +1,13 @@
+steps:
+
+1- open this link https://abc.com
+2-enter new email address and password
+3-intercept a request in burpsuite
+4-request send to intruder and use null payloads.
+5- i have received multiple emails on my emailbox.
+
+Impact
+E-mail bombs hack may create Denial of service (DoS) conditions against your e-mail software and even your network and Internet connection by taking up a large amount of bandwidth and, sometimes, requiring large amounts of storage space
+
+Remediation:
+Rate limiting should be implemented

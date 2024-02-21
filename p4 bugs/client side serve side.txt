@@ -1,0 +1,10 @@
+Broken authentication and session management-failure to invalidate session on logout (client side/server side)
+
+Steps:
+
+1- login a account go to update name .
+2-intercept the request and send the request to repeater.
+3-forworded the request
+3-logout from the application.
+4-now i am able to add new name.
+5-When i logged in again login changes got reflected.

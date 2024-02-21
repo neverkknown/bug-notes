@@ -1,0 +1,10 @@
+
+POC-
+
+1.GO TO- https://mxtoolbox.com
+2.ENTER THE WEBSITE(abc.com).CLICK GO.
+3.YOU WILL SEE THE FAULT(No DMARC Record found)
+
+Impact
+
+Spammers can forge the "From" address on email messages to make messages appear to come from someone in your domain. If spammers use your domain to send spam or junk email, your domain quality is negatively affected. People who get the forged emails can mark them as spam or junk, which can impact authentic messages sent from your domain.

@@ -1,0 +1,14 @@
+Hello Team,
+
+I have found a vulnerability issue of Improper Cache-Control
+
+Description - There is an issue of Improper Cache-Control widely known as lack of security headers on a sensitive page.
+
+Steps:
+Go to the website
+Login using the credentials
+Click on the Logout button
+Press the back button 
+User's private information will be visible
+
+Impact - User's private information will be visible.
