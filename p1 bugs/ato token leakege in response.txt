@@ -22,7 +22,7 @@ Origin: https://my-staging.finiata.pl
 Connection: close
 Referer: https://my-staging.finiata.pl/forgotten-password
 
-{“email”:“sachin272516@gmail.com”}
+{“email”:“xyz@gmail.com”}
 
 3.Request Send to repeater and go
 4- I have recived a reset token in response.
