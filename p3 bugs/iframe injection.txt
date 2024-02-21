@@ -1,0 +1,9 @@
+iFrame injection: which occurs when a frame on a vulnerable web page displays another web page via a user-controllable input.
+
+Impact: An attacker might use this vulnerability to redirect users to other malicious websites that are used for phishing and similar attacks.
+
+Step to Reproduce:
+• Open the Url https://example.com and login a account
+• Enter the payload in input field <IFRAME SRC=# onmouseover="alert(document.cookie)"></IFRAME>
+• Click on Save
+• Iframe payload got executed successfully and got injected

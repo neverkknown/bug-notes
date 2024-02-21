@@ -1,0 +1,8 @@
+Steps-
+
+1- I have create a account with santosh@gmail.com
+2-Enable 2fA security.
+3-login through email and password (2FA code asked for login)
+4-Sign in through Google O-AUTH
+5-Successfully Login account without 2FA.
+

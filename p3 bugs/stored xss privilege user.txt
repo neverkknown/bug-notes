@@ -1,0 +1,12 @@
+stored xss (privilege user to privilege elevation)
+
+1- I have create a account on android application.
+2-Enter a XSS payload in Name filed
+Payload - <script>alert(1)</script>
+3-Now go to Website and login a account
+4-Open domain/subdomains this link
+5-My XSS payload is executed and disclose of other user Shopify account and password.
+
+
+
+

@@ -1,0 +1,18 @@
+Summary:
+
+Website is not fully protected by an SSL certificate. This could allow an attacker in a Man-in-the-Middle position to obtain usernames and passwords of users visiting the site.
+
+link- http://abc.com
+
+Reproduce Steps-
+
+1- Open website link 
+2-run wireshark tool and start 
+3-enter username and password 
+4-stop wireshark and filter http data and check username and password on website link.
+
+Impact:
+
+If a user were to visit this page from a public or shared network (eg,office, airport, library, etc) and login a account, a malicious user on the same network would be able to obtain that users username and password by conducting a Man-in-the-Middle attack using sslstrip and wireshark.
+
+This would allow the malicious user complete access to the user's account.

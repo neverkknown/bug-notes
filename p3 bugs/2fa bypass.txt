@@ -1,0 +1,17 @@
+You all know about the 2FA Bypass Vulnerability. There are some Techniques.
+
+
+1-Bypassing 2fa Via OAuth mechanism
+2-Bypassing 2fa via brute force
+3-Bypassing 2fa using race conditions (RARE)
+4-Bypassing 2fa using modifies response
+5-Bypassing 2fa using Activation link
+6-Bypassing 2fa in password reset page
+7-bypassing 2fa using any random otp
+
+But here I am able to disable the 2FA via Client side attack which is CSRF.
+
+aut
+
+
+

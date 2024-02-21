@@ -1,0 +1,17 @@
+
+Summary:
+When a user uploads an image in example.com, the uploaded image’s EXIF Geo-location Data does not gets stripped. As a result, anyone can get sensitive information of example.com users like their Geo-location, their Device information like Device Name, Version, Software & Software version used etc.
+
+When you will downlaod a picture directly from website 
+
+Steps:
+
+poc:
+
+1- go to https://www.abc.com/photos/MADLEAS1CIg/
+2-download a image
+3-go to https://exif.regex.info
+4- upload the image
+5-Exif data leaked
+
+I have attached Video POC.

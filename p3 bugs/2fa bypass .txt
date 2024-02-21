@@ -1,0 +1,13 @@
+
+Description:
+Hi, While I was testing your web application https://app-stage.bill.com/ I found a vulnerability in MFA implementation.
+When Verifying mobile number for mfa it allowing user to verify any random number for verification just by taking request in burp & change the response from false to True.
+
+Steps to Reproduce:
+
+1-go to https://abc.com and enter any mobile number.
+
+2-Now enter any six digit number in OTP box & click enter
+3-Take this request in repeater & do intercept the response
+4- In response of that request just change the false to true
+5- Mobile number is successfully verified without even real OTP.
